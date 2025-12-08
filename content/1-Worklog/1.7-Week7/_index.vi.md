@@ -1,59 +1,55 @@
 ---
 title: "Worklog Tuần 7"
-date: "`r Sys.Date()`"
-weight: 1
-chapter: false
-pre: " <b> 1.7. </b> "
+date: "2025-10-20"
+weight: 7
+chapter: false 
+pre: " <b> 1.7. </b>"
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thành thạo AWS CloudWatch để giám sát và quan sát
+* Triển khai DNS hybrid với Route 53 Resolver
+* Phát triển kỹ năng AWS CLI nâng cao
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Workshop AWS CloudWatch - Metrics: <br>&emsp; + Hoàn tất các bước chuẩn bị <br>&emsp; + Xem và phân tích CloudWatch metrics <br>&emsp; + Sử dụng search expressions để lọc metrics <br>&emsp; + Áp dụng math expressions để tính toán metrics <br>&emsp; + Cấu hình dynamic labels cho metrics | 10/20/2025 | 10/20/2025 | <https://000008.awsstudygroup.com/> |
+| 3   | - Workshop AWS CloudWatch - Logs & Monitoring: <br>&emsp; + Làm việc với CloudWatch Logs <br>&emsp; + Sử dụng CloudWatch Logs Insights để phân tích log <br>&emsp; + Cấu hình CloudWatch Metric Filters <br>&emsp; + Tạo và quản lý CloudWatch Alarms <br>&emsp; + Xây dựng và tùy chỉnh CloudWatch Dashboards | 10/21/2025 | 10/21/2025 | <https://000008.awsstudygroup.com/> |
+| 4   | - Thiết lập Hybrid DNS với Route 53 Resolver: <br>&emsp; + Tạo key pair để truy cập bảo mật <br>&emsp; + Khởi tạo CloudFormation template <br>&emsp; + Cấu hình security groups <br>&emsp; + Kết nối đến RD Gateway <br>&emsp; + Triển khai Microsoft Active Directory <br> - Thiết lập cấu hình DNS: <br>&emsp; + Tạo Route 53 Outbound Endpoint <br>&emsp; + Tạo Route 53 Resolver Rules <br>&emsp; + Tạo Route 53 Inbound Endpoint <br>&emsp; + Kiểm tra kết quả DNS resolution | 10/22/2025 | 10/23/2025 | https://000010.awsstudygroup.com/ |
+| 5   | - Thành thạo AWS CLI: <br>&emsp; + Cài đặt và cấu hình AWS CLI <br>&emsp; + Xem tài nguyên AWS qua các lệnh CLI <br>&emsp; + Quản lý các hoạt động Amazon S3 <br>&emsp; + Làm việc với dịch vụ Amazon SNS <br>&emsp; + Xử lý người dùng và chính sách IAM <br>&emsp; + Cấu hình VPC và Internet Gateway <br>&emsp; + Tạo instance EC2 sử dụng CLI <br>&emsp; + Xử lý sự cố CLI thông thường | 10/23/2025 | 10/24/2025 | <https://000011.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Thành thạo cách sử dụng khả năng giám sát của AWS CloudWatch:
+  * Phân tích metrics với search và math expressions
+  * Cấu hình dynamic labels để tăng cường trực quan hóa
+  * Sử dụng CloudWatch Logs Insights để phân tích log
+  * Tạo metric filters và cấu hình alarms
+  * Xây dựng dashboards tùy chỉnh để giám sát toàn diện
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Triển khai giải pháp DNS hybrid với Route 53 Resolver:
+  * Triển khai cơ sở hạ tầng Microsoft Active Directory
+  * Cấu hình Route 53 inbound và outbound endpoints
+  * Tạo resolver rules cho DNS resolution hybrid
+  * Kiểm tra và xác thực chức năng DNS xuyên suốt các môi trường
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Thành thạo AWS CLI nâng cao:
+  * Quản lý nhiều dịch vụ AWS (S3, SNS, IAM, VPC) qua CLI
+  * Cấu hình các thành phần VPC bao gồm Internet Gateway
+  * Tạo và quản lý instance EC2 sử dụng command line
+  * Phát triển kỹ năng xử lý sự cố cho hoạt động CLI
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Có được chuyên môn về tự động hóa cơ sở hạ tầng:
+  * Sử dụng CloudFormation templates để triển khai tài nguyên
+  * Triển khai truy cập bảo mật với key pairs và security groups
+  * Kết nối đến RD Gateway để quản lý từ xa
+  * Tự động hóa cấu hình DNS và mạng
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+* Nâng cao kỹ năng giám sát và quản lý vận hành:
+  * Thiết lập quan sát toàn diện với CloudWatch
+  * Triển khai giải pháp kết nối hybrid cloud
+  * Phát triển khả năng tự động hóa command line
 

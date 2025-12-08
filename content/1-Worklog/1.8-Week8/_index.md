@@ -1,57 +1,53 @@
 ---
 title: "Week 8 Worklog"
-date: "`r Sys.Date()`"
-weight: 1
+date: "2025-10-27"
+weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 8 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Master Amazon DynamoDB fundamentals and operations
+* Prepare for and complete OJT Midterm Exam
+* Develop AWS SDK integration skills
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| 2 | - Amazon DynamoDB Fundamentals: <br>&emsp; + Learn core components and architecture <br>&emsp; + Understand primary keys and secondary indexes <br>&emsp; + Study naming rules and data types <br>&emsp; + Explore read consistency models <br>&emsp; + Compare read/write capacity modes <br> - DynamoDB Management: <br>&emsp; + Create access keys for programmatic access <br>&emsp; + Create tables using AWS Management Console <br>&emsp; + Perform CRUD operations (Create, Read, Update) <br>&emsp; + Query data and create Global Secondary Indexes | 10/27/2025 | 10/27/2025 | https://000060.awsstudygroup.com/ |
+| 3   | - OJT Midterm Exam Preparation: <br>&emsp; + Review AWS Well-Architected Framework <br>&emsp; + Study secure architecture principles <br>&emsp; + Practice resilient and high-performing architectures <br>&emsp; + Prepare for cost-optimized design scenarios | 10/28/2025 | 10/31/2025 | 
+| 4 | - Advanced DynamoDB Operations: <br>&emsp; + Use AWS CloudShell for DynamoDB management <br>&emsp; + Create tables and perform operations via CLI <br>&emsp; + Query Global Secondary Indexes in CloudShell <br> - AWS SDK Integration: <br>&emsp; + Configure AWS CLI for DynamoDB access <br>&emsp; + Get started with Python and DynamoDB SDK <br>&emsp; + Perform comprehensive table operations: <br>&emsp;&emsp; • Create, read, update, and delete data <br>&emsp;&emsp; • Load sample datasets <br>&emsp;&emsp; • Query and scan operations <br>&emsp;&emsp; • Clean up by deleting tables | 10/29/2025 | 11/1/2025 | https://000060.awsstudygroup.com/ |
+| 5 | - FPTU OJT Midterm Exam - Exam 4: <br>&emsp; + Complete AWS knowledge assessment <br>&emsp; + Demonstrate understanding of Well-Architected Framework <br>&emsp; + Apply knowledge across architecture domains: <br>&emsp;&emsp; • Secure Architectures <br>&emsp;&emsp; • Resilient Architectures <br>&emsp;&emsp; • High-Performing Architectures <br>&emsp;&emsp; • Cost-Optimized Architectures | 10/31/2025 | 10/31/2025 | 
 
 ### Week 8 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Mastered Amazon DynamoDB NoSQL database service:
+  * Understood core components including tables, items, and attributes
+  * Implemented primary keys and Global Secondary Indexes
+  * Performed comprehensive CRUD operations via console and CLI
+  * Configured read consistency and capacity modes
 
-* Successfully created and configured an AWS Free Tier account.
+* Developed advanced database management skills:
+  * Used AWS Management Console for DynamoDB operations
+  * Leveraged AWS CloudShell for command-line database management
+  * Created and queried Global Secondary Indexes for efficient data access
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Gained AWS SDK programming experience:
+  * Configured AWS CLI for DynamoDB access
+  * Integrated Python with DynamoDB using AWS SDK
+  * Performed table operations including creation, querying, and deletion
+  * Managed data lifecycle with load, scan, and cleanup operations
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Successfully prepared for and completed OJT Midterm Exam:
+  * Mastered AWS Well-Architected Framework principles
+  * Applied knowledge across four architecture domains
+  * Demonstrated understanding of secure, resilient, and cost-optimized designs
+  * Validated high-performing architecture implementation skills
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Enhanced technical proficiency across multiple interfaces:
+  * Web console for visual management
+  * CLI for command-line operations
+  * SDK for programmatic integration
+  * Comprehensive database administration capabilities

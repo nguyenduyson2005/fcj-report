@@ -1,126 +1,139 @@
 ---
 title: "Event 2"
-date: "`r Sys.Date()`"
+date: "2025-11-15"
 weight: 1
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “AWS Cloud Mastery Series #1”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+* Provide practical insights into AWS Bedrock and modern AI development
+* Introduce foundational model concepts and prompt engineering best practices
+* Demonstrate RAG workflows and embedding-based search
+* Present AWS AI services commonly used in real-world applications
+* Explain AgentCore and production-ready GenAI system architecture
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+* **Lam Tuan Kiet** – Senior DevOps Engineer, FPT Software  
+* **Dang Hoang Hieu Nghi** – AI Engineer, Reonova Cloud  
+* **Dinh Le Hoang Anh** – Cloud Engineer Trainee, FCJ  
+* **Kha** – Shared advice on building product-oriented projects for CVs  
+* **FPT Representative** – Spoke on companies using AI on cloud for optimization and cost savings  
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Foundation Models & Industry Direction
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+* Traditional ML models handle *one task* and require labeled data.
+* Foundation models in Generative AI are trained on massive unlabeled datasets, enabling versatile multi-task capabilities.
+* Bedrock now integrates models like **OpenAI** and **DeepSeek**.
+* Companies increasingly build AI-driven products on cloud platforms to reduce operational cost.
 
-#### Transitioning to modern application architecture – Microservices
+#### Insights from Lam Tuan Kiet
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+* Explained the evolution from traditional ML → foundation models.
+* Emphasized the importance of prompt engineering for high-quality outputs.
+* Demonstrated how Bedrock simplifies access to advanced models without complex DevOps.
+* Highlighted that building AI products requires skill, iteration, and responsible deployment.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Promp Engineering
 
-#### Domain-Driven Design (DDD)
+* **Zero-shot prompting** – Minimal context; results may be simple or vague.  
+* **Few-shot prompting** – Provide examples inside the prompt for clearer responses.  
+* **Chain-of-thought prompting** – Guide the model with reasoning steps for improved accuracy and detail.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### Retrieval-Augmented Generation (RAG)
 
-#### Event-Driven Architecture
+* The system retrieves relevant information from a data source.
+* It automatically combines user prompts with retrieved context.
+* Produces more accurate and relevant responses.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+#### Embeddings
 
-#### Compute Evolution
+* Text is converted into vectors representing meaning.  
+* Similar meanings cluster together in vector space.  
+* **AWS Titan Text Embeddings** support over 100 languages.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+#### AWS AI Services
 
-#### Amazon Q Developer
+* **Rekognition** – Image/video object detection  
+* **Translate** – Automatic translation  
+* **Textract** – Extracts text and layout structures  
+* **Transcribe** – Speech-to-text with speaker recognition  
+* **Polly** – Text-to-speech  
+* **Comprehend** – NLP, entity extraction, relationship understanding  
+* **Kendra** – Intelligent document search  
+* **Lookout Family** – Anomaly detection for metrics, equipment, and vision  
+* **Personalize** – Recommendation systems  
+* **Pipecat** – AI agent pipeline framework  
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+Developers can use these services directly via APIs.
+
+#### Amazon Bedrock AgentCore
+
+* Allows building AI applications without heavy DevOps and infrastructure management.
+* Supports modern frameworks like **LangGraph** and **LangChain**.
+* Designed to help teams move from prototype → production efficiently.
+
+**Key Mechanisms**
+
+* Runtime  
+* Memory  
+* Identity  
+* Gateway  
+* Code Interpreter  
+* Browser Tool  
+* Observability  
 
 ### Key Takeaways
 
-#### Design Mindset
+#### AI Development Mindset
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+* Real-world product creation is more valuable than passing academic requirements.
+* Foundation models allow rapid experimentation and deployment.
+* Prompt engineering significantly affects output quality.
 
-#### Technical Architecture
+#### Technical Impact
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+* RAG enhances accuracy by grounding responses in real data.
+* Embeddings improve semantic search and information retrieval.
+* AWS AI services cover end-to-end workflows—from speech to vision to NLP.
 
-#### Modernization Strategy
+#### Real-World Relevance
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+* Companies increasingly adopt cloud-based AI to reduce costs and accelerate product development.
+* Skills in prompt engineering, embeddings, and Bedrock services are becoming essential.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Attending the **AWS Cloud Mastery Series #1** provided practical understanding of how modern AI systems operate on AWS.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### 1. Direct Learning from Engineers
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+* Speakers shared real working experience from DevOps, AI, and cloud engineering roles.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### 2. Hands-on Technical Knowledge
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+* Examples of prompt engineering  
+* RAG demonstrations  
+* Use cases for each AWS AI service  
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+#### 3. Building for the Future
 
-#### Some event photos
-*Add your event photos here*  
+* Encouragement to build real products  
+* Cloud + AI skills are becoming core requirements  
+* Strong focus on practical deployment rather than theory  
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+### Some Event Photos
+
+![Event Image](/images/event-5.jpg)  
+
+![Event Image](/images/event-6.jpg)  
+
+![Event Image](/images/event-7.jpg)  
+
+![Event Image](/images/event-8.jpg)

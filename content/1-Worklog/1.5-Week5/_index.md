@@ -1,57 +1,48 @@
 ---
 title: "Week 5 Worklog"
-date: "`r Sys.Date()`"
-weight: 1
+date: "2025-10-06"
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 5 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Deploy full-stack applications with EC2 and RDS
+* Implement AWS Lightsail for WordPress hosting
+* Contribute to group project development and documentation
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
-
+| 2 | - Prepare infrastructure for application deployment: <br>&emsp; + Create VPC for application environment <br>&emsp; + Create EC2 Security Group <br>&emsp; + Create RDS Security Group <br>&emsp; + Create DB Subnet Group <br> - Deploy application components: <br>&emsp; + Create EC2 Instance <br>&emsp; + Create RDS database instance <br> - Application deployment and management: <br>&emsp; + Deploy application to EC2 instance <br>&emsp; + Implement backup and restore procedures | 10/06/2025 | 10/06/2025 | https://000005.awsstudygroup.com/ |
+| 3   | - Create a dataset of storm coordinates with a 3-hour timestep for our group project's model training                                              | 10/07/2025 | 10/08/2025      | 
+| 4   | - Work on the Vietnamese version of our group project proposal Markdown file <br> - Deploy database on AWS Lightsail <br> - Deploy WordPress instance: <br>&emsp; + Launch WordPress instance on Lightsail <br>&emsp; + Configure Ubuntu server settings <br>&emsp; + Set up networking configuration <br>&emsp; + Complete WordPress setup and configuration | 10/09/2025 | 10/09/2025      | <https://000045.awsstudygroup.com/> |
+| 5   | - Work on the Vietnamese translation of 3 blog posts as requested by my mentors:  <br>&emsp; + Qwen models are now available in Amazon Bedrock <br>&emsp; + DeepSeek-V3.1 model now available in Amazon Bedrock <br>&emsp; + Scale visual production using Stability AI Image Services in Amazon Bedrock                         | 10/10/2025 | 10/10/2025      |
 ### Week 5 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Deployed complete application infrastructure using EC2 and RDS:
+  * Created VPC with proper security groups and subnet groups
+  * Configured EC2 instances and RDS databases for application hosting
+  * Implemented backup and restore procedures for data protection
 
-* Successfully created and configured an AWS Free Tier account.
+* Successfully deployed WordPress using AWS Lightsail:
+  * Launched and configured WordPress instances on Lightsail
+  * Set up Ubuntu server and networking configurations
+  * Deployed databases and completed WordPress setup
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Contributed to group project development:
+  * Created storm coordinate datasets for model training
+  * Translated project proposal documentation to Vietnamese
+  * Enhanced project accessibility for Vietnamese team members
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Completed technical translation work:
+  * Translated AWS Bedrock blog posts about AI models
+  * Covered Qwen, DeepSeek-V3.1, and Stability AI services
+  * Supported knowledge sharing within the Vietnamese community
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Gained experience with multiple AWS deployment approaches:
+  * Traditional EC2+RDS architecture
+  * Simplified Lightsail deployment model
+  * Database and application hosting best practices

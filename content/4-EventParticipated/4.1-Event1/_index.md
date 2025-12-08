@@ -1,126 +1,162 @@
 ---
 title: "Event 1"
-date: "`r Sys.Date()`"
+date: "2025-09-18"
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “Vietnam Cloud Day 2025: Ho Chi Minh City Connect Edition for Builders”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+* Highlight Vietnam–US tech cooperation and cloud-driven economic growth
+* Showcase AI and blockchain innovations shaping Vietnam’s digital future
+* Present AWS initiatives supporting builders, education, and workforce transformation
+* Emphasize culture, skills, and responsible AI as foundations for sustainable innovation
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+* **US Ambassador** – Insights on 30 years of US–Vietnam cooperation through technology
+* **Eric Elock** – CEO, AWS VN–Laos–Cambodia–Myanmar
+* **Chloe Phung** – CEO, U2U
+* **Erick** – CEO, AWS
+* **Jaime Valless** – AWS Leadership
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Strengthening Vietnam–US Collaboration
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+* The US Ambassador emphasized the strong relationship between Vietnam and the United States.
+* Highlighted 30 years of bilateral growth enabled through US technology companies such as AWS.
 
-#### Transitioning to modern application architecture – Microservices
+#### Vision from Eric Elock (AWS Regional CEO)
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+* Banks play a major role in supporting IT modernization.
+* **U2U ecosystem**: Enables interaction between businesses and users through blockchain.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Insights from Chloe Phung (CEO U2U)
 
-#### Domain-Driven Design (DDD)
+* **Two years ago**, partners told them their idea was *impossible*.
+* Today, Vietnam is *not only catching up* with global revolutions but also **shaping them**.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### AI Shaping Vietnam’s Future
 
-#### Event-Driven Architecture
+* **Education**: 60% of Vietnamese students use EdTech apps; AI helps break language barriers and creates engaging learning experiences.
+* **Economy**: Over **765 AI startups**, 2nd in ASEAN. Contributes **$120–130B** GDP impact.
+* **Social impact**: More accessible and affordable healthcare. Doctors at Hospital 10A reduced exam time to **5 minutes per case** using AI.
+* AI improves traffic systems, energy efficiency, and even protects coastlines.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+#### Real-world Tech Momentum
 
-#### Compute Evolution
+* **Nubila**: AI-powered weather-related capabilities.
+* **Staex**: Successfully deployed **1,000+ IoT devices** across Asia and Europe.
+* GenAI reduces hours of documentation searching; developers complete projects in **hours/days instead of weeks**.
+* GenAI simplifies blockchain for beginners, improving accessibility.
+* AI improves decision-making for businesses, policy makers, and daily workflows.
+* Special thanks to AWS for enabling breakthroughs.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+#### Remarks from AWS CEO Erick
 
-#### Amazon Q Developer
+* AWS has trained **100,000+ builders in Vietnam**.
+* Expanding access to cloud services across the country.
+* **FJC program**: A 6-month initiative providing secure job opportunities.
+* Emphasized AWS culture as a key differentiator.
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+#### Insights from Jaime Valless
+
+* Reframed the message with focus on culture and skills.
+* "We stand in a **unique moment in history** where AI will transform everything."
+* It’s not only about technology — **skills, people, culture, and responsibility** matter.
+* Humanity is now in the best position to build a **better, sustainable future**.
+* Shift from training models to **secure, responsible inference**.
+* AWS provides access to secure, diverse models.
+* Example: **Nearmap** uses AI to help customers make faster decisions.
+* Let technology handle the boring tasks; humans focus on creativity and thinking.
+
+At the end, Erik delivered a message of **happiness, health, and success**.
+
+#### AI-Driven Development Lifecycle
+
+Even when giving AI more tasks, **control must remain human**:
+
+* Confirm
+* Clarify
+* Review
+
+Three phases:
+
+* **Inception**: Idea generation, defining tasks
+* **Construction**: Domain modeling, code generation, testing, IaC deployment
+* **Operation**: Complete deployment, incident management
+
+#### Security for AI Applications
+
+Managing AI risks:
+
+* AI governance policies
+* AI hallucination mitigation
+* Data poisoning prevention
+* Prompt security
+* Access control and permissioning
+
+Architectural safeguards:
+
+* Human-in-the-loop
+* Secured prompts
+* Supply-chain verification
+* Data evaluation
+* RAG systems for accuracy
+
+#### Amazon Q / QuickSight
+
+* Simplifies dashboard creation
+* Enables fast analytics with minimal setup
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Design & Innovation Mindset
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+* Vietnam is actively shaping global AI innovation.
+* Culture, skills, and responsibility are critical.
+* GenAI accelerates development and lowers entry barriers.
 
-#### Technical Architecture
+#### Technical Impact
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+* AI improves healthcare, education, economy, and logistics.
+* Secure and responsible AI is essential.
+* AWS tools empower builders with efficiency and scalability.
 
-#### Modernization Strategy
+#### Real-World Inspiration
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
-
-### Applying to Work
-
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+* Success stories (U2U, Staex, Nearmap) show Vietnam’s rising influence.
+* AI–Blockchain synergy is driving new business ecosystems.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Attending **Vietnam Cloud Day 2025** provided deep insight into how AI, cloud, and blockchain are shaping Vietnam’s technological future.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### 1. Learning from Global Experts
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+* The US Ambassador, AWS CEOs, and industry leaders shared high-level perspectives
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### 2. Real-world Case Studies
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+* AI in healthcare, education, transportation, and energy
+* Large-scale IoT and blockchain deployment in Asia and Europe
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+#### 3. Human-centered Innovation
 
-#### Some event photos
-*Add your event photos here*  
+* Culture and skill development are at the core of sustainable innovation
+* AI allows humans to focus on creativity instead of repetitive tasks
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+### Some Event Photos
+
+![Event Image](/images/event-4.jpg) 
+
+![Event Image](/images/event-3.jpg) 
+
+![Event Image](/images/event-2.jpg) 
+
+![Event Image](/images/event-1.jpg) 

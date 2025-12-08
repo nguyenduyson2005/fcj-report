@@ -1,57 +1,53 @@
 ---
 title: "Week 12 Worklog"
-date: "`r Sys.Date()`"
-weight: 2
+date: "2025-11-24"
+weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 12 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Master VM migration techniques using AWS VM Import/Export
+* Implement database migrations with AWS Database Migration Service (DMS)
+* Utilize Schema Conversion Tool (SCT) for database schema transformations
+* Participate in AWS Cloud Mastery Series #3 event 
+* Support team collaboration through translation of workshop materials
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - VM Migration with AWS VM Import/Export <br>&emsp; + Prepare VMWare Workstation environment <br>&emsp; + Export virtual machine from on-premises infrastructure <br>&emsp; + Upload virtual machine files to AWS S3 <br>&emsp; + Import virtual machine to AWS cloud <br>&emsp; + Deploy EC2 instances from imported AMI | 11/24/2025 | 11/24/2025 | <https://000014.awsstudygroup.com/> |
+| 3   | - VM Migration with AWS VM Import/Export <br>&emsp; + Configure S3 bucket ACL for VM export <br>&emsp; + Export virtual machine from running EC2 instance <br>&emsp; + Export virtual machine from existing AMI <br>&emsp; + Reference migration guide videos <br>&emsp; + Perform resource cleanup on AWS cloud | 11/25/2025 | 11/25/2025 | <https://000014.awsstudygroup.com/> |
+| 4   | - Database Migration with AWS Database Migration Service (DMS) and Schema Conversion Tool (SCT): <br>&emsp; + Get started with AWS DMS configuration <br>&emsp; + Select and configure DMS source database <br>&emsp; + Select and configure DMS target database <br>&emsp; + Implement serverless replication setup <br>&emsp; + Monitor DMS migration progress and performance <br>&emsp; + Troubleshoot migration issues with AWS DMS <br>&emsp; + Perform environment cleanup and resource termination | 11/26/2025 | 11/26/2025 | <https://000043.awsstudygroup.com/> |
+| 5   | - Create Vietnamese versions of my group's English workshop files                           | 11/27/2025 | 11/28/2025      | |
+| 6   | - Participate in the AWS Cloud Mastery Series #3 event    | 11/29/2025 | 11/29/2025      |  |
 
 
 ### Week 12 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Mastered virtual machine migration workflows:
+  * Prepared VMWare Workstation environments for migration
+  * Exported virtual machines from on-premises infrastructure
+  * Uploaded VM files to AWS S3 storage
+  * Imported virtual machines to AWS cloud environment
+  * Deployed EC2 instances from imported AMI images
+  * Configured S3 bucket ACLs for VM export operations
+  * Exported virtual machines from running EC2 instances
+  * Exported virtual machines from existing AMIs
 
-* Successfully created and configured an AWS Free Tier account.
+* Implemented comprehensive database migration solutions:
+  * Configured AWS Database Migration Service (DMS)
+  * Selected and configured source databases for migration
+  * Selected and configured target databases for migration
+  * Implemented serverless replication setups
+  * Monitored DMS migration progress and performance
+  * Troubleshot migration issues using AWS DMS tools
+  * Managed database migration lifecycle from setup to cleanup
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Advanced cloud migration expertise:
+  * Established end-to-end VM migration capabilities
+  * Built database migration proficiency across platforms
+  * Implemented comprehensive resource management strategies
+  * Developed troubleshooting skills for migration challenges

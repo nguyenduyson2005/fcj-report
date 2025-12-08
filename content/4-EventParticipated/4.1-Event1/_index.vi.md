@@ -1,125 +1,161 @@
 ---
 title: "Event 1"
-date: "`r Sys.Date()`"
+date: "2025-09-18"
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch “Vietnam Cloud Day 2025: Ho Chi Minh City Connect Edition dành cho Builders”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+*   Nhấn mạnh hợp tác công nghệ Việt Nam–Hoa Kỳ và tăng trưởng kinh tế dựa trên điện toán đám mây
+*   Giới thiệu các đổi mới về AI và blockchain định hình tương lai số của Việt Nam
+*   Trình bày các sáng kiến của AWS hỗ trợ builders, giáo dục và chuyển đổi lực lượng lao động
+*   Nhấn mạnh văn hóa, kỹ năng và AI có trách nhiệm là nền tảng cho đổi mới bền vững
 
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+*   **Đại sứ Hoa Kỳ** – Chia sẻ về 30 năm hợp tác Hoa Kỳ–Việt Nam thông qua công nghệ
+*   **Eric Elock** – CEO, AWS VN–Lào–Campuchia–Myanmar
+*   **Chloe Phung** – CEO, U2U
+*   **Erick** – CEO, AWS
+*   **Jaime Valless** – Lãnh đạo AWS
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Củng cố Hợp tác Việt Nam–Hoa Kỳ
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+*   Đại sứ Hoa Kỳ nhấn mạnh mối quan hệ bền chặt giữa Việt Nam và Hoa Kỳ.
+*   Làm nổi bật 30 năm tăng trưởng song phương được thúc đẩy nhờ các công ty công nghệ Hoa Kỳ như AWS.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Tầm nhìn từ Eric Elock (CEO Khu vực AWS)
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+*   Các ngân hàng đóng vai trò quan trọng trong hỗ trợ hiện đại hóa CNTT.
+*   **Hệ sinh thái U2U**: Cho phép tương tác giữa doanh nghiệp và người dùng thông qua blockchain.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### Góc nhìn từ Chloe Phung (CEO U2U)
 
-#### Domain-Driven Design (DDD)
+*   **Hai năm trước**, các đối tác nói ý tưởng của họ là *không thể*.
+*   Ngày nay, Việt Nam không chỉ bắt kịp các cuộc cách mạng toàn cầu mà còn đang **định hình chúng**.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+#### AI Định hình Tương lai Việt Nam
 
-#### Event-Driven Architecture
+*   **Giáo dục**: 60% học sinh Việt Nam sử dụng ứng dụng EdTech; AI giúp phá vỡ rào cản ngôn ngữ và tạo trải nghiệm học tập hấp dẫn.
+*   **Kinh tế**: Hơn **765 startup AI**, đứng thứ 2 tại ASEAN. Đóng góp tác động **120–130 tỷ USD** vào GDP.
+*   **Tác động xã hội**: Chăm sóc sức khỏe dễ tiếp cận và chi phí hợp lý hơn. Các bác sĩ tại Bệnh viện 10A giảm thời gian khám xuống còn **5 phút mỗi ca** bằng AI.
+*   AI cải thiện hệ thống giao thông, hiệu quả năng lượng và thậm chí bảo vệ đường bờ biển.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+#### Đà phát triển Công nghệ Thực tế
 
-#### Compute Evolution
+*   **Nubila**: Công dụng liên quan đến thời tiết được hỗ trợ bởi AI.
+*   **Staex**: Triển khai thành công **hơn 1.000 thiết bị IoT** khắp châu Á và châu Âu.
+*   GenAI giảm hàng giờ tìm kiếm tài liệu; nhà phát triển hoàn thành dự án trong **vài giờ/ngày thay vì nhiều tuần**.
+*   GenAI đơn giản hóa blockchain cho người mới bắt đầu, cải thiện khả năng tiếp cận.
+*   AI cải thiện việc ra quyết định cho doanh nghiệp, nhà hoạch định chính sách và quy trình làm việc hàng ngày.
+*   Đặc biệt cảm ơn AWS đã tạo điều kiện cho các đột phá.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+#### Phát biểu của CEO AWS Erick
 
-#### Amazon Q Developer
+*   AWS đã đào tạo **hơn 100.000 builders tại Việt Nam**.
+*   Mở rộng khả năng tiếp cận dịch vụ đám mây trên cả nước.
+*   **Chương trình FJC**: Sáng kiến 6 tháng cung cấp cơ hội việc làm an toàn.
+*   Nhấn mạnh văn hóa AWS là điểm khác biệt chính.
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+#### Góc nhìn từ Jaime Valless
+
+*   Định hình lại thông điệp với trọng tâm là văn hóa và kỹ năng.
+*   "Chúng ta đang ở một **thời khắc độc nhất trong lịch sử** nơi AI sẽ biến đổi mọi thứ."
+*   Không chỉ là công nghệ — **kỹ năng, con người, văn hóa và trách nhiệm** mới quan trọng.
+*   Nhân loại giờ đang ở vị thế tốt nhất để xây dựng một **tương lai tốt đẹp hơn, bền vững**.
+*   Chuyển từ đào tạo mô hình sang **suy luận an toàn, có trách nhiệm**.
+*   AWS cung cấp quyền truy cập vào các mô hình đa dạng, an toàn.
+*   Ví dụ: **Nearmap** sử dụng AI để giúp khách hàng đưa ra quyết định nhanh hơn.
+*   Hãy để công nghệ xử lý các tác vụ nhàm chán; con người tập trung vào sáng tạo và tư duy.
+
+Cuối cùng, Erik đã gửi gắm thông điệp về **hạnh phúc, sức khỏe và thành công**.
+
+#### Vòng đời Phát triển được AI Hỗ trợ
+
+Ngay cả khi giao nhiều nhiệm vụ hơn cho AI, **quyền kiểm soát phải luôn thuộc về con người**:
+
+*   Xác nhận
+*   Làm rõ
+*   Rà soát
+
+Ba giai đoạn:
+
+*   **Khởi tạo**: Tạo ý tưởng, xác định tác vụ
+*   **Xây dựng**: Mô hình hóa miền, tạo mã, kiểm thử, triển khai IaC
+*   **Vận hành**: Triển khai hoàn chỉnh, quản lý sự cố
+
+#### Bảo mật cho Ứng dụng AI
+
+Quản lý rủi ro AI:
+
+*   Chính sách quản trị AI
+*   Giảm thiểu ảo giác AI
+*   Ngăn ngừa nhiễm độc dữ liệu
+*   Bảo mật prompt
+*   Kiểm soát truy cập và phân quyền
+
+Các biện pháp bảo vệ kiến trúc:
+
+*   Con người trong vòng lặp
+*   Prompt được bảo mật
+*   Xác minh chuỗi cung ứng
+*   Đánh giá dữ liệu
+*   Hệ thống RAG để đảm bảo độ chính xác
+
+#### Amazon Q / QuickSight
+
+*   Đơn giản hóa việc tạo dashboard
+*   Cho phép phân tích nhanh với thiết lập tối thiểu
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+#### Tư duy Thiết kế & Đổi mới
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+*   Việt Nam đang tích cực định hình đổi mới AI toàn cầu.
+*   Văn hóa, kỹ năng và trách nhiệm là yếu tố then chốt.
+*   GenAI đẩy nhanh tốc độ phát triển và hạ thấp rào cản gia nhập.
 
-#### Kiến Trúc Kỹ Thuật
+#### Tác động Kỹ thuật
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+*   AI cải thiện chăm sóc sức khỏe, giáo dục, kinh tế và hậu cần.
+*   AI an toàn và có trách nhiệm là điều cần thiết.
+*   Công cụ AWS trao quyền cho builders với hiệu quả và khả năng mở rộng.
 
-#### Chiến Lược Hiện Đại Hóa
+#### Cảm hứng Thực tế
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+*   Các câu chuyện thành công (U2U, Staex, Nearmap) cho thấy ảnh hưởng ngày càng tăng của Việt Nam.
+*   Sự kết hợp AI–Blockchain đang thúc đẩy các hệ sinh thái kinh doanh mới.
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Tham dự **Vietnam Cloud Day 2025** mang lại cái nhìn sâu sắc về cách AI, điện toán đám mây và blockchain đang định hình tương lai công nghệ của Việt Nam.
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+#### 1. Học hỏi từ Chuyên gia Toàn cầu
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+*   Đại sứ Hoa Kỳ, các CEO của AWS và lãnh đạo ngành chia sẻ góc nhìn cấp cao
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+#### 2. Nghiên cứu Điển hình Thực tế
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+*   AI trong chăm sóc sức khỏe, giáo dục, giao thông và năng lượng
+*   Triển khai IoT và blockchain quy mô lớn tại châu Á và châu Âu
 
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+#### 3. Đổi mới Lấy Con người làm Trung tâm
 
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+*   Phát triển văn hóa và kỹ năng là cốt lõi của đổi mới bền vững
+*   AI cho phép con người tập trung vào sáng tạo thay vì các tác vụ lặp đi lặp lại
+
+### Một số hình ảnh khi tham gia sự kiện
+
+![Ảnh sự kiện](/images/event-4.jpg)
+
+![Ảnh sự kiện](/images/event-3.jpg)
+
+![Ảnh sự kiện](/images/event-2.jpg)
+
+![Ảnh sự kiện](/images/event-1.jpg)

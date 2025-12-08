@@ -1,59 +1,48 @@
 ---
 title: "Worklog Tuần 2"
-date: "`r Sys.Date()`"
-weight: 1
+date: "2025-09-15"
+weight: 2
 chapter: false
-pre: " <b> 1.2. </b> "
+pre: " <b> 1.2. </b>"
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 2:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thành thạo việc triển khai và quản lý máy chủ EC2
+* Triển khai mạng AWS và kết nối VPN
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| 2   | - Học cách triển khai máy chủ Amazon EC2 <br>&emsp; + Tạo máy chủ EC2 <br>&emsp; + Kết nối vào máy chủ EC2  <br>&emsp; + Tạo NAT Gateway     <br>&emsp;   + Sử dụng Reachability Analyzer               <br>&emsp;  + Tạo EC2 Instance Connect Endpoint <br>&emsp;  + Truy cập Secure Shell với AWS Systems Manager Session Manager <br>&emsp;     +   Triển khai Giám sát CloudWatch và cảnh báo cho tài nguyên VPC                                                       | 15/09/2025 | 15/09/2025      | <https://000003.awsstudygroup.com/> |
+| 3   | - Thiết lập Kết nối VPN Site-to-Site trên AWS <br>&emsp; + Tạo môi trường VPN (VPC cho VPN) <br>&emsp; + Tạo máy chủ EC2 đóng vai trò Customer Gateway <br>&emsp; + Tạo Virtual Private Gateway <br>&emsp; + Tạo Customer Gateway | 16/09/2025 | 16/09/2025      | <https://000003.awsstudygroup.com/> |
+| 4   | - Cấu hình Kết nối VPN <br>&emsp; + Tạo Kết nối VPN <br>&emsp; + Thực hiện Cấu hình Customer Gateway <br>&emsp; + Chỉnh sửa cài đặt AWS VPN Tunnel <br>&emsp; + Xem lại các Cấu hình VPN Thay thế | 17/09/2025 | 17/09/2025      | <https://000003.awsstudygroup.com/> |
+| 5   | - Tham gia sự kiện Vietnam Cloud Day 2025 : Ho Chi Minh City Connect Edition for Builders | 18/09/2025 | 18/09/2025      |                                           |
+| 6   | - Xử lý Sự cố VPN & Cấu hình Nâng cao <br>&emsp; + Làm theo Hướng dẫn Xử lý sự cố VPN <br>&emsp; + Xem lại Hướng dẫn Xử lý sự cố VPN chính thức của AWS <br>&emsp; + Kết nối VPN sử dụng Strongswan với Transit Gateway | 19/09/2025 | 19/09/2025      | <https://000003.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 2:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Triển khai và quản lý thành công máy chủ EC2:
+  * Đã tạo và khởi chạy máy chủ EC2 sử dụng AWS Management Console.
+  * Kết nối vào máy chủ thông qua EC2 Instance Connect và Systems Manager Session Manager.
+  * Cấu hình NAT Gateway để cho phép subnet private truy cập internet.
+  * Sử dụng Reachability Analyzer để xác minh kết nối mạng.
+  * Triển khai giám sát CloudWatch và cảnh báo cho tài nguyên VPC và EC2.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thiết lập và cấu hình kết nối VPN Site-to-Site:
+  * Tạo môi trường VPN bao gồm VPC chuyên dụng cho cấu hình VPN.
+  * Triển khai máy chủ EC2 đóng vai trò Customer Gateway.
+  * Tạo và gắn Virtual Private Gateway.
+  * Cấu hình kết nối VPN giữa AWS và Customer Gateway.
+  * Chỉnh sửa cài đặt VPN tunnel và xem xét các cấu hình VPN thay thế.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Thực hiện xử lý sự cố và cấu hình nâng cao VPN:
+  * Làm theo hướng dẫn xử lý sự cố VPN của AWS để xác định và giải quyết các vấn đề kết nối phổ biến.
+  * Kiểm tra kết nối VPN sử dụng Strongswan tích hợp với AWS Transit Gateway.
+  * Xác minh giao tiếp an toàn giữa tài nguyên on-premises và VPC trên AWS.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Nâng cao hiểu biết về các thành phần mạng AWS và quản lý kết nối,
+  bao gồm mạng EC2, NAT Gateway, VPN và các công cụ giám sát.
 
 

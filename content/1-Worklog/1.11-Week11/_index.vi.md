@@ -1,59 +1,53 @@
 ---
 title: "Worklog Tuần 11"
-date: "`r Sys.Date()`"
-weight: 2
+date: "2025-11-17"
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 11:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Triển khai dịch vụ directory doanh nghiệp với AWS Managed Microsoft AD
+* Xây dựng ứng dụng web có tính sẵn sàng cao với khả năng auto-scaling
+* Thành thạo việc triển khai WordPress trên cơ sở hạ tầng đám mây AWS
+* Tham gia sự kiện cộng đồng AWS và game day
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| 2   | - Tham gia sự kiện AWS Cloud Mastery Series #2 | 11/17/2025 | 11/17/2025      |
+| 3   | - Dịch vụ Directory Services với AWS Managed Microsoft AD: <br>&emsp; + Triển khai dịch vụ directory AWS Managed Microsoft AD <br>&emsp; + Triển khai và cấu hình EC2 instances <br>&emsp; + Chỉnh sửa computer names để join domain <br>&emsp; + Cấu hình EC2 instances cho dịch vụ domain <br>&emsp; + Kiểm tra giao tiếp server trong domain <br>&emsp; + Thực hiện dọn dẹp dịch vụ và kết thúc tài nguyên | 11/18/2025 | 11/18/2025 | <https://000095.awsstudygroup.com/> |
+| 4   | - Xây dựng Ứng dụng Web Có Tính Sẵn Sàng Cao: <br>&emsp; + Chuẩn bị cơ sở hạ tầng VPC và subnet <br>&emsp; + Tạo security groups cho EC2 instances <br>&emsp; + Tạo security groups cho cơ sở dữ liệu instances <br>&emsp; + Khởi chạy và cấu hình EC2 instances <br>&emsp; + Triển khai và cấu hình database instances <br>&emsp; + Cài đặt và cấu hình WordPress trên EC2 | 11/19/2025 | 11/19/2025 | <https://000101.awsstudygroup.com/> |
+| 5   | - Xây dựng Ứng dụng Web Có Tính Sẵn Sàng Cao: <br>&emsp; + Tạo AMI từ web server instance <br>&emsp; + Cấu hình launch templates cho auto scaling <br>&emsp; + Tạo application load balancer <br>&emsp; + Thiết lập auto scaling group <br>&emsp; + Triển khai database backup với snapshots <br>&emsp; + Khôi phục cơ sở dữ liệu từ snapshot <br>&emsp; + Cấu hình CloudFront cho web server <br>&emsp; + Thực hiện dọn dẹp tài nguyên | 11/20/2025 | 11/20/2025 | <https://000101.awsstudygroup.com/> |
+| 6   | - Tham gia sự kiện [AWS GenAI Builders Club] Game Day - Secret Agent(ic) Unicorns | 11/21/2025 | 11/21/2025      | |
 
 ### Kết quả đạt được tuần 11:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Thiết lập chuyên môn về dịch vụ directory doanh nghiệp:
+  * Triển khai dịch vụ directory AWS Managed Microsoft AD
+  * Cấu hình EC2 instances để join và quản lý domain
+  * Chỉnh sửa computer names và cấu hình dịch vụ domain
+  * Kiểm tra giao tiếp server trong Active Directory domain
+  * Quản lý vòng đời dịch vụ directory từ triển khai đến dọn dẹp
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Xây dựng kiến trúc ứng dụng web có tính sẵn sàng cao:
+  * Thiết kế và triển khai cơ sở hạ tầng VPC và subnet
+  * Tạo security groups cho EC2 instances và các cơ sở dữ liệu
+  * Triển khai và cấu hình database instances cho WordPress
+  * Cài đặt và cấu hình WordPress trên EC2 instances
+  * Tạo AMI images từ web server instances
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Triển khai giải pháp auto-scaling và load balancing:
+  * Cấu hình launch templates cho auto-scaling groups
+  * Triển khai application load balancers để phân phối traffic
+  * Thiết lập auto-scaling groups cho tính sẵn sàng cao
+  * Cấu hình CloudFront distributions để tăng tốc web server
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Thành thạo việc quản lý cơ sở dữ liệu và disaster recovery:
+  * Triển khai chiến lược database backup với snapshots
+  * Thực hiện khôi phục cơ sở dữ liệu từ snapshots
+  * Quản lý database instances cho ứng dụng WordPress
 
 

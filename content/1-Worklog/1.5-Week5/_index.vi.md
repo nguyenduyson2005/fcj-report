@@ -1,59 +1,54 @@
 ---
 title: "Worklog Tuần 5"
-date: "`r Sys.Date()`"
-weight: 1
+date: "2025-10-06"
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Triển khai ứng dụng full-stack với EC2 và RDS
+* Triển khai AWS Lightsail để host WordPress
+* Đóng góp vào phát triển và tài liệu hóa dự án nhóm
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Chuẩn bị cơ sở hạ tầng để triển khai ứng dụng: <br>&emsp; + Tạo VPC cho môi trường ứng dụng <br>&emsp; + Tạo Security Group cho EC2 <br>&emsp; + Tạo Security Group cho RDS <br>&emsp; + Tạo DB Subnet Group <br> - Triển khai các thành phần ứng dụng: <br>&emsp; + Tạo Instance EC2 <br>&emsp; + Tạo instance database RDS <br> - Triển khai và quản lý ứng dụng: <br>&emsp; + Triển khai ứng dụng lên instance EC2 <br>&emsp; + Triển khai quy trình backup và restore | 10/06/2025 | 10/06/2025 | https://000005.awsstudygroup.com/ |
+| 3   | - Tạo dataset tọa độ bão với bước thời gian 3 giờ cho việc training model của dự án nhóm                                              | 10/07/2025 | 10/08/2025      | 
+| 4   | - Làm việc trên phiên bản tiếng Việt của file đề xuất dự án nhóm Markdown <br> - Triển khai database trên AWS Lightsail <br> - Triển khai instance WordPress: <br>&emsp; + Khởi chạy instance WordPress trên Lightsail <br>&emsp; + Cấu hình cài đặt server Ubuntu <br>&emsp; + Thiết lập cấu hình mạng <br>&emsp; + Hoàn tất thiết lập và cấu hình WordPress | 10/09/2025 | 10/09/2025      | <https://000045.awsstudygroup.com/> |
+| 5   | - Làm việc trên bản dịch tiếng Việt của 3 bài blog theo yêu cầu từ mentors:  <br>&emsp; + Mô hình Qwen hiện đã có sẵn trong Amazon Bedrock <br>&emsp; + Mô hình DeepSeek-V3.1 hiện đã có sẵn trong Amazon Bedrock <br>&emsp; + Mở rộng sản xuất hình ảnh bằng Stability AI Image Services trong Amazon Bedrock                         | 10/10/2025 | 10/10/2025      |
+
 
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Triển khai thành công cơ sở hạ tầng ứng dụng đầy đủ sử dụng EC2 và RDS:
+  * Tạo VPC với security groups và subnet groups phù hợp
+  * Cấu hình instance EC2 và database RDS để host ứng dụng
+  * Triển khai quy trình backup và restore để bảo vệ dữ liệu
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Triển khai thành công WordPress sử dụng AWS Lightsail:
+  * Khởi chạy và cấu hình instance WordPress trên Lightsail
+  * Thiết lập cấu hình server Ubuntu và mạng
+  * Triển khai database và hoàn tất thiết lập WordPress
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Đóng góp vào phát triển dự án nhóm:
+  * Tạo dataset tọa độ bão cho việc training model
+  * Dịch tài liệu đề xuất dự án sang tiếng Việt
+  * Nâng cao khả năng tiếp cận dự án cho thành viên nhóm người Việt
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Hoàn thành công việc dịch thuật kỹ thuật:
+  * Dịch các bài blog về AWS Bedrock và mô hình AI
+  * Bao gồm Qwen, DeepSeek-V3.1, và dịch vụ Stability AI
+  * Hỗ trợ chia sẻ kiến thức trong cộng đồng Việt Nam
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Có được kinh nghiệm với nhiều phương pháp triển khai AWS:
+  * Kiến trúc EC2+RDS truyền thống
+  * Mô hình triển khai Lightsail đơn giản
+  * Các thực tiễn tốt nhất về hosting database và ứng dụng
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
 
 

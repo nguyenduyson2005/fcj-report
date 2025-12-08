@@ -1,59 +1,53 @@
 ---
 title: "Worklog Tuần 4"
-date: "`r Sys.Date()`"
-weight: 1
+date: "2025-09-29"
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thành thạo sử dụng vai trò IAM để ủy quyền cho ứng dụng
+* Học về môi trường phát triển AWS Cloud9
+* Triển khai website tĩnh trên S3 với CloudFront
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Học cách cấp quyền ủy quyền cho ứng dụng truy cập dịch vụ AWS với vai trò IAM <br> - Chuẩn bị <br>&emsp; + Tạo instance EC2 <br>&emsp; + Tạo bucket S3 <br> - Tạo người dùng IAM với access keys để ứng dụng Python upload lên S3 <br> - Tạo vai trò IAM với quyền cho ứng dụng upload files lên bucket S3                                                                                              | 09/29/2025 | 09/29/2025 | <https://000048.awsstudygroup.com/> |
+| 3 | - Tạo Instance Cloud9 <br> - Học các tính năng cơ bản của Cloud9: <br>&emsp; + Sử dụng command line <br>&emsp; + Làm việc với text files <br>&emsp; + Quay lại giao diện Dashboard <br> - Sử dụng AWS CLI trong Cloud9 | 09/30/2025 | 09/30/2025 | <https://000049.awsstudygroup.com/> |
+| 4   | - Tìm hiểu thông tin về Amazon S3 <br>&emsp; + Hiểu sự khác biệt giữa S3 Buckets và Object <br>&emsp;  + Tính năng chính (storage classes, security and compliance, management and analytics, performance and availability)  <br>&emsp; + Các trường hợp sử dụng phổ biến <br>  - Tạo bucket S3 và upload dữ liệu để chuẩn bị host website tĩnh <br> - Cấu hình website tĩnh: <br>&emsp; + Bật tính năng website tĩnh <br>&emsp; + Cấu hình public access block <br>&emsp; + Cấu hình public objects <br>&emsp; + Kiểm tra website <br> - Tăng tốc với CloudFront: <br>&emsp; + Block all public access <br>&emsp; + Cấu hình Amazon CloudFront <br>&emsp; + Kiểm tra Amazon CloudFront <br> - Tính năng S3 nâng cao: <br>&emsp; + Cấu hình bucket versioning <br>&emsp; + Di chuyển objects giữa các buckets <br>&emsp; + Thiết lập cross-region replication | 10/01/2025 | 10/04/2025      | <https://000057.awsstudygroup.com/> |
+| 5   | - Tham gia sự kiện [AWS GenAI Builder Club] AI-Driven Development Life Cycle: Reimagining Software Engineering                                                                                              | 10/03/2025 | 10/03/2025 | |
 
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Thành thạo cấu hình vai trò IAM để ủy quyền cho ứng dụng:
+  * Tạo người dùng IAM với access keys để upload lên S3
+  * Cấu hình vai trò IAM với quyền truy cập S3
+  * Thiết lập instance EC2 và bucket S3 để kiểm tra ứng dụng
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thành thạo sử dụng môi trường phát triển AWS Cloud9:
+  * Tạo và quản lý instance Cloud9
+  * Sử dụng command line interface và tính năng chỉnh sửa text
+  * Thực thi các lệnh AWS CLI trong Cloud9
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Triển khai thành công hosting website tĩnh trên S3:
+  * Cấu hình bucket S3 để host website tĩnh
+  * Quản lý public access blocks và quyền truy cập objects
+  * Kiểm tra chức năng và hiệu suất website
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Triển khai CloudFront để tăng tốc phân phối nội dung:
+  * Cấu hình CloudFront distributions cho website S3
+  * Triển khai các biện pháp bảo mật bằng cách block public access
+  * Kiểm tra hiệu suất và caching của CloudFront
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Áp dụng các tính năng S3 nâng cao:
+  * Bật bucket versioning để bảo vệ dữ liệu
+  * Quản lý di chuyển objects giữa các buckets
+  * Thiết lập cross-region replication cho disaster recovery
 
 

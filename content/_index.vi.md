@@ -1,21 +1,21 @@
 ---
 title: "Báo cáo thực tập"
-date: "`r Sys.Date()`"
+date: "2025-09-08"
 weight: 1
 chapter: false
 ---
 
 # Báo cáo thực tập
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Nguyễn Văn A
+&emsp; **Họ và tên:** Nguyễn Duy Sơn 
 
-&emsp; **Số điện thoại:** 0989888999
+&emsp; **Số điện thoại:** 0818400453
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** yama27032005@gmail.com
 
-&emsp; **Trường:** Đại học Sư phạm Kỹ thuật TP.HCM
+&emsp; **Trường:** FPTU - Tp.HCM
 
-&emsp; **Ngành:** Công nghệ thông tin
+&emsp; **Ngành:** Trí tuệ nhân tạo
 
 &emsp; **Lớp:** AWS082025
 
@@ -23,7 +23,7 @@ chapter: false
 
 &emsp; **Vị trí thực tập:** FCJ Cloud Intern
 
-&emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
+&emsp; **Thời gian thực tập:** Từ ngày 08/09/2025 đến ngày 09/12/2025
 
 ![Ảnh đại diện của bạn](/images/avatar.png)
 
