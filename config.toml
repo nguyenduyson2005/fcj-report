@@ -1,4 +1,4 @@
-baseURL = "https://github.com/nguyenduyson2005/fcj-workshop/"
+baseURL = "https://nguyenduyson2005.github.io/fcj-workshop/"
 relativeURLs = true
 canonifyURLs = true
 defaultContentLanguage = "en"
@@ -27,6 +27,9 @@ home = [ "HTML", "RSS", "JSON"]
 title = "Internship Report"
 weight = 1
 languageName = "English"
+# Add this for English
+[Languages.en.params]
+languageURL = "https://nguyenduyson2005.github.io/fcj-workshop/"
 
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-facebook'></i> AWS Study Group"
@@ -44,6 +47,8 @@ name = "<i class='fab fa-facebook'></i> AWS Study Group"
 identifier = "AWS Study Group FB"
 url = "https://www.facebook.com/groups/awsstudygroupfcj/"
 weight = 20
+[Languages.vi.params]
+languageURL = "https://nguyenduyson2005.github.io/fcj-workshop/vi/"
 
 [markup]
   [markup.goldmark]
